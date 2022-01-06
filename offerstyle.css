@@ -1,0 +1,16 @@
+.container .food a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container > div > a> div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .offer1{
+    background: url(./images/offer1.jpg);
+}
+.container .offer2{
+    background: url(./images/offer2.jpg);
+}

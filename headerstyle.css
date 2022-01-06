@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/backgrouund.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+}
+header .brand .logo img{
+    width: 130px;
+}
+header .brand .name h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Sonsie One', cursive;
+    margin-left: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+header .brand{
+    text-decoration: none;
+    display: flex;
+    flex-basis: 400px;
+    position: relative;
+}
+header .search input[type="search"]{
+    width: 82%;
+    font-size: 20px;
+    line-height: 42px;
+    border: none;
+    border-radius: 20px;
+    font-style: italic;
+    height: fit-content;
+    color: grey;
+}
+header .search{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    flex-basis: 300px;
+}
+header .search button{
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 7px;
+    margin-left: 10px;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+    color: grey;
+    transition: all 0.5s;
+}
+header nav ul li{
+    display: inline-flex;
+}
+header nav ul li a{
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+header nav ul li a i{
+    padding-right: 10px;
+}
+header nav{
+    margin-top: 10px;
+    margin-left: auto;
+}
+header{
+    margin-top: 20px;
+    display: flex;
+}
+header nav ul li a:hover{
+    background-color: white;
+    color: grey;
+}
+header .search button:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width:1350px){
+    header{
+    flex-wrap: wrap; 
+    justify-content: center;
+    }
+    header .search{
+        margin-left: 0;
+        padding-top: 10px;
+    }
+    header nav ul li{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    header nav ul li a{
+        margin-top: 10px;
+    }
+    header nav{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:610px){
+    header nav ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,58px);
+    }
+    header nav ul li a{
+        width: 120px;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    header .brand{
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:380px){
+    header .brand .name h1{
+        font-size: 30px;
+    }
+    header .brand .logo img{
+        width: 90px;
+    }
+    .menu a{
+        text-align: center;
+    }
+}
